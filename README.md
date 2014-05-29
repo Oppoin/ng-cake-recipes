@@ -26,3 +26,4 @@ How to build a user login and registration system
 How to work with external APIs in Angular
 How to deal with SEO on an AJAX site.
 
+  3. Finished demo product: We will make API requests to Youtube to get data, load different movies with charts and use Angular router to create different pages.
