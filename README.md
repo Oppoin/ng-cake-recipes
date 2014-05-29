@@ -15,8 +15,8 @@ There will be 2 major sections:
 ## Summary of ng-rails
 
  1. Introduction
-   a. Motivation:
+   1. Motivation:
       the one-liner tl;dr;
-   b. What we are going to learn:
+   2. What we are going to learn:
       the x-liner tl;dr;
 
