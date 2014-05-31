@@ -40,5 +40,16 @@ How to deal with SEO on an AJAX site.
    9. A little bit more markup: Adding more markup.
    10. Add Twitter Bootstrap CSS: open app/assets/stylesheets/applcation.css and enter *= require twitter/bootstrap
    11. Add angularJS to application.js: Open app/assets/javascripts/application.js And add //=require angular and remove 'turbolinks' and 'JQuery' AND create a new dir, app/assets/javascripts/app, and create a app/assets/javascripts/app/app.js with -> angular.module('popcorn', []);
+ 3. Our First Controller - MoviesController
+   1. Intro: Start writing Angular code. First we need to create the movie posters view. We need HTML view and Angular controller.
+   2. Creating our MoviesController: Follow the code given in the video for the function defining syntax.
+   3. Basic scopes: Controller takes in two arguments. The name of the controller and a function that defines the controller's behavior.
+   4. Dummy Movies: This is basically the lorem Ipsum of the data that we are using to populate the website with.
+   5. Basic Movies View: We will learn how to use attribute 'ng-repeat' to set each element to the variable movie. ng-repeat is like an each loop in ruby.
+   6. Adding details to Movies View: Add more tags to have a more complete webpage.
+   7. Adding CSS: Copy stylesheet from: http://bit.ly/popcorn-css and save it in app/assets/stylesheets/oopcorn.css.scss
+   8. Basic Favorites: Add more markup to support favorite function, we learn to use ng-if and ng-click for "if" and "click" functions in the markup.
+   9. Introductions to directives: "ng-if" and "ng-click" are called directives. In Angular, directives will be used aplenty. 
+   10. Implementing addFavorite/removeFavorite: We define functions add and remove favorite.
 
 
