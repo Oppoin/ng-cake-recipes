@@ -51,5 +51,11 @@ How to deal with SEO on an AJAX site.
    8. Basic Favorites: Add more markup to support favorite function, we learn to use ng-if and ng-click for "if" and "click" functions in the markup.
    9. Introductions to directives: "ng-if" and "ng-click" are called directives. In Angular, directives will be used aplenty. 
    10. Implementing addFavorite/removeFavorite: We define functions add and remove favorite.
-
+  
+ 4. Setting up Routing
+   1. Introduction: We are to create an individual page for each of the movies.
+   2. Create a new controller: Set up a `MovieController` in app.js to set up individual page for movies.
+   3. Setting up the router: Load ngRoute in application.js and includes in this 'ngRoute' inside `MoviesController`. The idea behind this  is similar to routes.php in cake.
+   4. Creating the HTML template: We can provide a template view by putting it in `app/public/templates`. Create movies.html.
+   5. Creating a new namespace: All the controller code is currently in app.js, by creating a namespace, we modularize the code to a controller folder, one file per controller.
 
