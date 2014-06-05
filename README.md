@@ -53,9 +53,16 @@ How to deal with SEO on an AJAX site.
    10. Implementing addFavorite/removeFavorite: We define functions add and remove favorite.
   
  4. Setting up Routing
-   1. Introduction: We are to create an individual page for each of the movies.
-   2. Create a new controller: Set up a `MovieController` in app.js to set up individual page for movies.
+   1. Introduction: Our aim is to create an individual page for each of the movies.
+   2. Create a new controller: Set up a `MovieController` in app.js to set up pages for the movies
    3. Setting up the router: Load ngRoute in application.js and includes in this 'ngRoute' inside `MoviesController`. The idea behind this  is similar to routes.php in cake.
    4. Creating the HTML template: We can provide a template view by putting it in `app/public/templates`. Create movies.html.
    5. Creating a new namespace: All the controller code is currently in app.js, by creating a namespace, we modularize the code to a controller folder, one file per controller.
+ 5. Movie Page & Services
+   1. Movie page structure: Add a new route to each individual movie page, create a `MovieController` and a movie template for each movie view.
+   2. A Route Detour: when refresh, rails will take over the routing component. This will prompt an error. We will configure in rails to pass the Url to Angular to handle in routes.rb
+   3. A service: We learn here to write a service. A service is to provide data to multiple controller without duplicating the code. These are singleton objects.
+   4. Back to our service: Move the data movies data into MovieService.js and we need to tell the controllers to take in the service as part of its function argument and not forgetting loading in app.js as well.
+   5. Back to the Movie page: Fill out the movie.html template with the provided code. Load the `MovieService` in `MovieController` and use `$routeParams` to get each of the movies from the array. The link to the video still wouldn't work due to a security component in Angular. To get around this we need to load `$sce` library and use it as follow as in the tutorial.
+   
 
